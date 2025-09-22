@@ -1,0 +1,16 @@
+{
+  "name": "monadvol2",
+  "version": "1.0.0",
+  "description": "Volume trading bot with dashboard",
+  "main": "backend/app.py",
+  "scripts": {
+    "start": "cd backend && python app.py",
+    "dev": "cd backend && uvicorn app:app --reload --host 0.0.0.0 --port 8000",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "install-deps": "pip install -r requirements.txt && cd frontend && npm install"
+  },
+  "keywords": ["trading", "bot", "volume", "ethereum", "web3"],
+  "author": "",
+  "license": "MIT"
+}
